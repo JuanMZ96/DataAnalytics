@@ -5,7 +5,7 @@ _Integrantes_
 
 | Nombre  | Apellido |
 | ------------- | ------------- |
-| Juan  | Marintez |
+| Juan  | Martinez |
 
 <details><summary>Primera entrega 16/09.</summary>
 <p>
