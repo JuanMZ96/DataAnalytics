@@ -42,27 +42,27 @@ _Integrantes_
         |  ActualCost|money|
         
    - Production.Product
-         | ColumnName  | DataType |
-         | ------------- | ------------- |
-         |ProductID|int|
-         |Name|nvarchar(50)|
-         |ProductNumber|nvarchar(25)|
-         |Color|nvarchar(15)|
-         |StandardCost|money|
-         |ListPrice|money|
-         |ProductSubcategoryID|int|
+        | ColumnName | DataType |
+        | ------------- | ------------- |
+        |  ProductID | int |
+        |  Name | nvarchar(50) |
+        |  ProductNumber | nvarchar(25) |
+        |  Color | nvarchar(15) |
+        |  StandardCost | money |
+        |  ListPrice | money |
+        |  ProductSubcategoryID | int |
 
     - Production.ProductSubcategory
-          | ColumnName  | DataType |
-          | ------------- | ------------- |
-          |ProductSubcategoryID|int|
-          |ProductCategoryID|int|
-          |Name|nvarchar(50)|
+        | ColumnName  | DataType |
+        | ------------- | ------------- |
+        |ProductSubcategoryID|int|
+        |ProductCategoryID|int|
+        |Name|nvarchar(50)|
     - Production.ProductCategory
-          | ColumnName  | DataType |
-          | ------------- | ------------- |
-          |ProductCategoryID|int|
-          |Name|nvarchar(50)|
+        | ColumnName  | DataType |
+        | ------------- | ------------- |
+        |ProductCategoryID|int|
+        |Name|nvarchar(50)|
 
 
 </p>
