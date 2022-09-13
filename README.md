@@ -7,7 +7,8 @@ _Integrantes_
 | ------------- | ------------- |
 | Juan  | Martinez |
 
-<details><summary>Primera entrega 16/09.</summary>
+<details open>
+<summary>Primera entrega 16/09.</summary>
 <p>
 
 1. Descripción de la temática.
@@ -28,6 +29,41 @@ _Integrantes_
   - Production.Product
   - Production.ProductCategory
   - Production.ProductSubcategory
+
+4. Diseño Tablas
+   - Production.TransactionHistory
+        | ColumnName  | DataType |
+        | ------------- | ------------- |
+        | TransactionsID | int |
+        | ProductID      |int  |
+        | TransactionDate |datetime|
+        |  TransactionType   |nchar(1)|
+        |  Quanty   |int|
+        |  ActualCost|money|
+        
+   - Production.Product
+         | ColumnName  | DataType |
+         | ------------- | ------------- |
+         |ProductID|int|
+         |Name|nvarchar(50)|
+         |ProductNumber|nvarchar(25)|
+         |Color|nvarchar(15)|
+         |StandardCost|money|
+         |ListPrice|money|
+         |ProductSubcategoryID|int|
+
+    - Production.ProductSubcategory
+          | ColumnName  | DataType |
+          | ------------- | ------------- |
+          |ProductSubcategoryID|int|
+          |ProductCategoryID|int|
+          |Name|nvarchar(50)|
+    - Production.ProductCategory
+          | ColumnName  | DataType |
+          | ------------- | ------------- |
+          |ProductCategoryID|int|
+          |Name|nvarchar(50)|
+
 
 </p>
 </details>
