@@ -1,8 +1,14 @@
-# DataAnalytics
+**# DataAnalytics**
+
+_Integrantes_
 
 
-Primera entrega 16/09.
+| Nombre  | Apellido |
+| ------------- | ------------- |
+| Juan  | Marintez |
 
+<details><summary>Primera entrega 16/09.</summary>
+<p>
 
 1. Descripción de la temática.
   Este trabajo consiste en hacer una análisis de la base de datos sumnisrada por el curso. 
@@ -22,5 +28,14 @@ Primera entrega 16/09.
   - Production.Product
   - Production.ProductCategory
   - Production.ProductSubcategory
+
+</p>
+</details>
+
+
+
+
+
+
  
  
