@@ -7,7 +7,7 @@ _Integrantes_
 |------------- | ------------- | ------------- |
 | 01 | Martinez|Juan 
 
-<details open>
+<details>
 <summary><h3>Primera entrega 16/09.</summary>
 <p>
 
@@ -68,6 +68,52 @@ _Integrantes_
 </p>
 </details>
 
+<details open>
+<summary><h3>Segunda entrega 06/10.</summary>
+<p>
+  
+## Diagrama Entidad Relación.
+
+```mermaid
+flowchart TB
+A(Production.TransactionHistory) --> B{Detalla}
+subgraph  
+	A --> 2((ProductID))
+	A -->1((TransactionsID))
+	A -->3((TransactionDate))
+	A -->4((TransactionType))
+	A -->5((Qyanty))
+	A -->6((ActualCost))
+end
+B --> C(Production.Product)
+C -->D{Tiene}
+subgraph  
+	C -->7((ProductID))
+	C -->9((Name))
+	C -->10((ProductNumber))
+	C -->11((Color))
+	C -->12((StandardCosts))
+	C -->13((ListPrice))
+	C -->14((ProductSubcategoryID))
+end
+D-->E(Production.ProductSubcategory)
+E-->F{Tiene}
+subgraph  
+	E -->15((ProductSubcategoryID))
+	E -->16((ProductCategoryID))
+	E -->17((Name))
+end
+F-->G(Production.ProductCategory)
+subgraph  
+	G -->18((ProductCategoryID))
+	G -->19((Name))
+end
+
+```
+
+
+</p>
+</details>
 
 
 
