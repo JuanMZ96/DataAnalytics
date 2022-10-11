@@ -95,7 +95,7 @@ style 3 fill: #E1BEE7,color: black
 style 4 fill: #E1BEE7,color: black
 style 5 fill: #E1BEE7,color: black
 style 6 fill: #E1BEE7,color: black
-A(Production.TransactionHistory) --> B{Detalla}
+A(Production.TransactionHistory) --1:N--> B{Detalla}
 style B fill: #FFF59D,color: black
 subgraph  
 	A -->2((ProductID))
@@ -106,7 +106,16 @@ subgraph
 	A -->6((ActualCost))
 end
 B --> C(Production.Product)
-C -->D{Tiene}
+style C fill: #A5D6A7,color: black
+style 7 fill:#E1BEE7,color: black
+style 9 fill: #E1BEE7,color: black
+style 10 fill: #E1BEE7,color: black
+style 11 fill: #E1BEE7,color: black
+style 12 fill: #E1BEE7,color: black
+style 13 fill: #E1BEE7,color: black
+style 14 fill: #E1BEE7,color: black
+C--1:1-->D{Tiene}
+style D fill: #FFF59D,color: black
 subgraph  
 	C -->7((ProductID))
 	C -->9((Name))
@@ -117,13 +126,21 @@ subgraph
 	C -->14((ProductSubcategoryID))
 end
 D-->E(Production.ProductSubcategory)
-E-->F{Tiene}
+style E fill:#A5D6A7,color: black
+style 15 fill:#E1BEE7,color: black
+style 16 fill: #E1BEE7,color: black
+style 17 fill: #E1BEE7,color: black
+E--1:1-->F{Tiene}
+style F fill: #FFF59D,color: black
 subgraph  
 	E -->15((ProductSubcategoryID))
 	E -->16((ProductCategoryID))
 	E -->17((Name))
 end
 F-->G(Production.ProductCategory)
+style G fill: #A5D6A7,color: black
+style 18 fill:#E1BEE7,color: black
+style 19 fill: #E1BEE7,color: black
 subgraph  
 	G -->18((ProductCategoryID))
 	G -->19((Name))
