@@ -7,8 +7,8 @@ _Integrantes_
 |------------- | ------------- | ------------- |
 | 01 | Martinez|Juan 
 
-<details>
-<summary><h3>Primera entrega 16/09.</summary>
+<details open>
+<summary><h3>Primera entrega 18/10.</summary>
 <p>
 
 ## Descripción de la temática.
@@ -68,17 +68,37 @@ _Integrantes_
 </p>
 </details>
 
-<details open>
-<summary><h3>Segunda entrega 06/10.</summary>
+<details>
+<summary><h3>Segunda entrega 03/11.</summary>
 <p>
-  
+ 
+## Objetivo del Proyecto.
+- El objetivo de esta segunda entrega es difinir los diagrama de clases que vamos a utilizar para entender el dominio del problema y los datos que serán
+	utilizados para la presentación en BI.
+	
+## Alcance.
+- El alcance del proyecto es terminar haciendo una presentación en power Bi según los datos de nuestro dataset.
+	
+## Usuario final y nivel de aplicación del análisis.
+- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
+	puede ser un generente de ventas o alguien mas mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
+	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
+	
 ## Diagrama Entidad Relación.
 
 ```mermaid
 flowchart TB
+style A fill: #A5D6A7,color: black
+style 2 fill:#E1BEE7,color: black
+style 1 fill: #E1BEE7,color: black
+style 3 fill: #E1BEE7,color: black
+style 4 fill: #E1BEE7,color: black
+style 5 fill: #E1BEE7,color: black
+style 6 fill: #E1BEE7,color: black
 A(Production.TransactionHistory) --> B{Detalla}
+style B fill: #FFF59D,color: black
 subgraph  
-	A --> 2((ProductID))
+	A -->2((ProductID))
 	A -->1((TransactionsID))
 	A -->3((TransactionDate))
 	A -->4((TransactionType))
