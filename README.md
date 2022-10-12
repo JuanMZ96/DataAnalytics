@@ -1,3 +1,4 @@
+
 **# DataAnalytics**
 
 _Integrantes_
@@ -85,7 +86,7 @@ _Integrantes_
 	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
 	
 ## Diagrama Entidad Relación.
-
+- A continuación el diagrama
 ```mermaid
 flowchart TB
 style A fill: #A5D6A7,color: black
@@ -147,7 +148,55 @@ subgraph
 end
 
 ```
+## Listado Tablas.
+   - 
+        | Production.TransactionHistory  |   |
+        | ------------- | ------------- |
+        | TransactionsID | PK |
+        | ProductID      | FK  |
+        | TransactionDate | |
+        |  TransactionType   | |
+        |  Quanty   | |
+        |  ActualCost||
+        
+   - 
+        | Production.Product | |
+        | ------------- | ------------- |
+        |  ProductID | PK |
+        |  Name | |
+        |  ProductNumber | |
+        |  Color | |
+        |  StandardCost | |
+        |  ListPrice | |
+        |  ProductSubcategoryID | FK |
+        
+   - 
+        | Production.ProductSubcategory  | |
+        | ------------- | ------------- |
+        |ProductSubcategoryID| PK |
+        |ProductCategoryID| FK |
+        |Name| |
+   - 
+        | Production.ProductCategory  | |
+        | ------------- | ------------- |
+        |ProductCategoryID|PK|
+        |Name| |
 
+
+
+	
+## Listado de columnas de cada tabla.
+-El alcance del proyecto es terminar haciendo una presentación en power Bi según los datos de nuestro dataset.
+- Production.ProductSubcategory
+```mermaid
+erDiagram
+ 
+ ProductionProductSubcategory {
+        string registrationNumber
+        string make
+        string model
+ }
+```
 
 </p>
 </details>
