@@ -78,7 +78,8 @@ _Integrantes_
 	utilizados para la presentación en BI.
 	
 ## Alcance.
-- El alcance del proyecto es terminar haciendo una presentación en power Bi según los datos de nuestro dataset.
+- El alcance del proyecto es terminar haciendo un dashboard en power Bi haciendo un análisis de las ventas que tenemos en nuestro dataset, según ciertos KPIS
+	difinidos en la primera entrega.
 	
 ## Usuario final y nivel de aplicación del análisis.
 - El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
