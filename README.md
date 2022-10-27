@@ -8,7 +8,7 @@ _Integrantes_
 |------------- | ------------- | ------------- |
 | 01 | Martinez|Juan 
 
-<details open>
+<details>
 <summary><h3>Primera entrega 18/10.</summary>
 <p>
 
@@ -69,7 +69,7 @@ _Integrantes_
 </p>
 </details>
 
-<details>
+<details open>
 <summary><h3>Segunda entrega 03/11.</summary>
 <p>
  
@@ -186,15 +186,36 @@ end
 
 	
 ## Listado de columnas de cada tabla.
--El alcance del proyecto es terminar haciendo una presentación en power Bi según los datos de nuestro dataset.
-- Production.ProductSubcategory
+
 ```mermaid
 erDiagram
+
+ ProductionTransactionHistory {
+        TransactionsID	int PK
+	ProductID	int FK
+	TransactionDate	datetime
+	TransactionType	nchar1
+	Quanty	int
+	ActualCost	money
+ }
+ ProductionProduct {
+        ProductID	int PK
+	Name	nvarchar50
+	ProductNumber	nvarchar25
+	Color	nvarchar15
+	StandardCost	money
+	ListPrice	money
+	ProductSubcategoryID	int FK
+ }
  
  ProductionProductSubcategory {
-        string registrationNumber
-        string make
-        string model
+        ProductSubcategoryID	int PK
+	ProductCategoryID	int FK
+	Name	nvarchar50
+ }
+ ProductionProductCategory {
+        ProductCategoryID	int PK
+	Name	nvarchar50
  }
 ```
 
