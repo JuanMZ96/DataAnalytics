@@ -83,7 +83,7 @@ _Integrantes_
 	
 ## Usuario final y nivel de aplicación del análisis.
 - El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
-	puede ser un generente de ventas o alguien mas mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
+	puede ser un generente de ventas o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
 	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
 	
 ## Diagrama Entidad Relación.
