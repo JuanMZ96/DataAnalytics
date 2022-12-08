@@ -69,7 +69,7 @@ _Integrantes_
 </p>
 </details>
 
-<details open>
+<details>
 <summary><h3>Segunda entrega 03/11.</summary>
 <p>
  
@@ -223,7 +223,31 @@ erDiagram
 </p>
 </details>
 
+<details open>
+<summary><h3>Tercera entrega 08/12.</summary>
+<p>
+ 
+## Objetivo del la entrega.
+- En esta entrega se solicita la confección de un dashboard en powerbi, junto a ciertas condiciones para su ralización.
+	
+## Transformaciones Realizadas.
+ - Base de datos
+   - Se realizo un cast() a la columna de TransactionDate para pasarlo a date de datetime  
+   - Se realizo un case when en la columna TransactionType para poder identificar que tipo de order era 
+   - Se realizo un cast() a decimal con solo dos lugares después de la coma de la columna ActualCost 
+   - Se realizo la creación de una columa nueva para identificar al precio final la transacción. se multiplica ActualCost por Quantity para obtener TotalPrice
+- Power Query
+   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el inner para buscar aquellos productos que si tuviera su subcategoria y categoria para poder realizar el análisis.
+- Power bi
+   - Se crearon aumaticamente el modelo relacional después de crear las conexiones en power query.
+	
+## Medidas Calculas y Formulas
+- 
+	
 
+
+</p>
+</details>
 
 
 
