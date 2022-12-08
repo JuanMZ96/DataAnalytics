@@ -234,15 +234,15 @@ erDiagram
   - Querys
     - Se cargaron todos los archivos .sql que fueron utilizados.
   - Icosnos/imagenes
-    - Se cargaron las imagenes e iconos que fueron utilizados.
+    - Se cargaron las imágenes e iconos que fueron utilizados.
   - Backup
-    - Se subio el .bak para que se puedan levantar y ver los datos que hay dentro que fueron utilizados.
+    - Se subió el .bak para que se puedan levantar y ver los datos que hay dentro que fueron utilizados.
   - Tablero
     - Se subió el tablero generado .pbix .
 ## Transformaciones Realizadas
  - Base de datos
    - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
-   - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de order era.
+   - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de _order_ era.
    - Se realizó un cast() a decimal con solo dos lugares después de la coma de la columna ActualCost. 
    - Se realizó la creación de una columa nueva para identificar al precio final la transacción. se multiplica ActualCost por Quantity para obtener TotalPrice.
 - Power Query
