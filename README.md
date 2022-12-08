@@ -229,7 +229,16 @@ erDiagram
  
 ## Objetivo del la entrega.
 - En esta entrega se solicita la confección de un dashboard en powerbi, junto a ciertas condiciones para su ralización.
-	
+## Archivos
+- Se cargaron todos los archivos
+  - Querys
+    - Se cargaron todos los archivos sql que fueron utilizados
+  - Icosnos/imagenes
+    - Se cargaron las imagenes e iconos que fueron utilizados
+  - Backup
+    - Se subio el .bak para que se pueda levantar y ver los datos que hay dentro que fueron utilizados
+  - Tablero
+    - Se subió el tablero generado .pbix
 ## Transformaciones Realizadas.
  - Base de datos
    - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
