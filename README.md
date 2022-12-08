@@ -232,19 +232,72 @@ erDiagram
 	
 ## Transformaciones Realizadas.
  - Base de datos
-   - Se realizo un cast() a la columna de TransactionDate para pasarlo a date de datetime  
-   - Se realizo un case when en la columna TransactionType para poder identificar que tipo de order era 
-   - Se realizo un cast() a decimal con solo dos lugares después de la coma de la columna ActualCost 
-   - Se realizo la creación de una columa nueva para identificar al precio final la transacción. se multiplica ActualCost por Quantity para obtener TotalPrice
+   - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
+   - Se realizó un case when en la columna TransactionType para poder identificar que tipo de order era.
+   - Se realizó un cast() a decimal con solo dos lugares después de la coma de la columna ActualCost. 
+   - Se realizó la creación de una columa nueva para identificar al precio final la transacción. se multiplica ActualCost por Quantity para obtener TotalPrice.
 - Power Query
    - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el inner para buscar aquellos productos que si tuviera su subcategoria y categoria para poder realizar el análisis.
+   - Se crearon 3 referencias de la tabla TransactionHistory pero cada una con un filtro distinto para poder diferenciar que tipo de order es, para así tener un análisis mas rápido y cálculos sincillos.
+   - Se creo una columna nueva que extrae el año de la fecha de venta para realizar un calculo mas sencillo.
 - Power bi
    - Se crearon aumaticamente el modelo relacional después de crear las conexiones en power query.
 	
 ## Medidas Calculas y Formulas
-- 
-	
+- Tablas
+   - Se creó una tabla de Totales para utilizarla para medidas generales de difentes orders.
+- Medidas
+   - La medida Profit sirve para saber la ganancias netas de la empresa.
+    ```ruby
+	VAR ventas =
+	CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "SalesOrder" }
+	)
+	VAR  compras = CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "PurchaseOrder" }
+	)
+	VAR  trabajos = CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+	RETURN
+	(trabajos + ventas) - compras
+    ```
+  - La medida Proudct se calcula la cantidad de productos por order por lo tanto se reemplaza la palabra clave(ejemplo WorkOrders). Por mas que use la función sum no suma porque la cantidad de valores es uno.
+   ```ruby
+	ProductWork = 
+	CALCULATE(
+		SUM('Total'[TotalProduct]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+   ```
+  - La medida Price sirve para saber el monto total dependiendo de la order, se reemplaza la palabra clave(ejemplo WorkOrders).Por mas que use la función sum no suma porque la cantidad de valores es uno.
+   ```ruby
+	PriceWork = 
+	CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+   ```
+  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del order. Para saber de los otros hay que cambiar la tabla, donde dice WorkOrder van las otras que se hizo en power query(Lo calculo de los años son fijos pero se pueden hacer dinamicos utilizando un varible que tome la fecha actual y extrayendo el año)
+   ```ruby
+	PorcentajeWork = 
+	VAR ventas14 =
+	CALCULATE(
+		SUM('WorkOrder'[TotalPrice]),
+		'WorkOrder'[DateYear] IN { 2014 }
+	)
+	VAR  ventas13 = CALCULATE(
+		SUM('WorkOrder'[TotalPrice]),
+		'WorkOrder'[DateYear] IN { 2013 }
+	)
 
+	
+	RETURN
+	((ventas14-ventas13)/ventas13)
+   ```
 
 </p>
 </details>
