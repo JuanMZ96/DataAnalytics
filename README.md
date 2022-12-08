@@ -228,33 +228,33 @@ erDiagram
 <p>
  
 ## Objetivo del la entrega.
-- En esta entrega se solicita la confección de un dashboard en powerbi, junto a ciertas condiciones para su ralización.
+- En esta entrega se solicita la confección de un dashboard en powerbi, junto a ciertas condiciones para su realización.
 ## Archivos
 - Se cargaron todos los archivos
   - Querys
-    - Se cargaron todos los archivos sql que fueron utilizados
+    - Se cargaron todos los archivos .sql que fueron utilizados.
   - Icosnos/imagenes
-    - Se cargaron las imagenes e iconos que fueron utilizados
+    - Se cargaron las imagenes e iconos que fueron utilizados.
   - Backup
-    - Se subio el .bak para que se pueda levantar y ver los datos que hay dentro que fueron utilizados
+    - Se subio el .bak para que se puedan levantar y ver los datos que hay dentro que fueron utilizados.
   - Tablero
-    - Se subió el tablero generado .pbix
-## Transformaciones Realizadas.
+    - Se subió el tablero generado .pbix .
+## Transformaciones Realizadas
  - Base de datos
    - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
-   - Se realizó un case when en la columna TransactionType para poder identificar que tipo de order era.
+   - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de order era.
    - Se realizó un cast() a decimal con solo dos lugares después de la coma de la columna ActualCost. 
    - Se realizó la creación de una columa nueva para identificar al precio final la transacción. se multiplica ActualCost por Quantity para obtener TotalPrice.
 - Power Query
-   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el inner para buscar aquellos productos que si tuviera su subcategoria y categoria para poder realizar el análisis.
-   - Se crearon 3 referencias de la tabla TransactionHistory pero cada una con un filtro distinto para poder diferenciar que tipo de order es, para así tener un análisis mas rápido y cálculos sincillos.
-   - Se creo una columna nueva que extrae el año de la fecha de venta para realizar un calculo mas sencillo.
+   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
+   - Se crearon 3 referencias de la tabla TransactionHistory, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
+   - Se creó una columna nueva que extrae el año de la fecha de venta para realizar un cálculo mas sencillo.
 - Power bi
-   - Se crearon aumaticamente el modelo relacional después de crear las conexiones en power query.
+   - Se creó automáticamente el modelo relacional después de crear las conexiones en power query.
 	
-## Medidas Calculas y Formulas
+## Medidas y Fórmulas
 - Tablas
-   - Se creó una tabla de Totales para utilizarla para medidas generales de difentes orders.
+   - Se creó una tabla de Totales para utilizarla para medidas generales de diferentes _orders_.
 - Medidas
    - La medida Profit sirve para saber la ganancias netas de la empresa.
     ```ruby
@@ -274,7 +274,7 @@ erDiagram
 	RETURN
 	(trabajos + ventas) - compras
     ```
-  - La medida Proudct se calcula la cantidad de productos por order por lo tanto se reemplaza la palabra clave(ejemplo WorkOrders). Por mas que use la función sum no suma porque la cantidad de valores es uno.
+  - La medida Product se calcula la cantidad de productos por _order_ por lo tanto se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función sum(), no suma porque la cantidad de valores es uno.
    ```ruby
 	ProductWork = 
 	CALCULATE(
@@ -282,7 +282,7 @@ erDiagram
 		'Total'[TransactionType] IN { "WorkOrder" }
 	)
    ```
-  - La medida Price sirve para saber el monto total dependiendo de la order, se reemplaza la palabra clave(ejemplo WorkOrders).Por mas que use la función sum no suma porque la cantidad de valores es uno.
+  - La medida Price sirve para saber el monto total dependiendo de la _order_, se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función sum(), no suma porque la cantidad de valores es uno.
    ```ruby
 	PriceWork = 
 	CALCULATE(
@@ -290,7 +290,7 @@ erDiagram
 		'Total'[TransactionType] IN { "WorkOrder" }
 	)
    ```
-  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del order. Para saber de los otros hay que cambiar la tabla, donde dice WorkOrder van las otras que se hizo en power query(Lo calculo de los años son fijos pero se pueden hacer dinamicos utilizando un varible que tome la fecha actual y extrayendo el año)
+  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del _order_. Para saber de los otros hay que cambiar la tabla, donde dice WorkOrder van las otras que se hizo en power query (Los cálculos de los años son fijos pero se pueden hacer dinámicos utilizando una variable que tome la fecha actual y extrayendo el año).
    ```ruby
 	PorcentajeWork = 
 	VAR ventas14 =
