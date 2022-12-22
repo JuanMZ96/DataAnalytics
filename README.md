@@ -321,10 +321,17 @@ erDiagram
 
 
 ## Indice
- 1. <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto.</a>
- 2. <a href="#alcance-1">Alcance.</a>
- 3. <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis.</a>
-	
+ 1. Presentación del Proyecto 
+    - <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto.</a>
+    - <a href="#alcance-1">Alcance.</a>
+    - <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis.</a>
+    - <a href="#descripción-de-la-temática-1">Descripción de la temática</a>
+    - <a href="#tipo-de-análisis-1">Tipo de Análisis</a>
+    - <a href="#"></a>
+<div align="center" text-decoration= "underline">
+<h1>Presentación del Proyecto
+</div>
+        
 ## Objetivo del Proyecto.
 - El objetivo de esta segunda entrega es difinir los diagrama de clases que vamos a utilizar para entender el dominio del problema y los datos que serán
 	utilizados para la presentación en BI.
@@ -337,6 +344,70 @@ erDiagram
 - El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
 	puede ser un generente de ventas o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
 	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
+## Descripción de la temática.
+  - Este trabajo consiste en hacer una análisis de la base de datos suministrada por el curso. 
+  En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de ventas de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
+  En estas tablas no se toman todas las columnas para su análisis, si no las necesarias para relevar la información pertinente.
+    
+## Tipo de Análisis.
+  - Se va analizar:
+    - Cantidad de ventas realizadas por año.
+    - Cantidad de ventas realizadas por mes. 
+    - Las ganancias de las ventas por año/mes.     
+    - Cantidad de productos vendidos, según subcategoría o categoría.
+    - Diferencia de los períodos en cuanto a ventas y productos.
+
+<div align="center" text-decoration= "underline">
+<h1>Base de Datos
+</div>        
+
+## Introducción.
+   - La base utilizada es una presentada por el curso dee CoderHouse para poder prácticar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página ofical de Microsoft(https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms). 
+     - Los datos de base no se usaron en tu totalidad, se usuaron solo la tabla de transacciones para poder ver el flujo de ventas, compras y ordenes de trabajo. Si bien tiene mas datos para analizar, acotamos el dominio para su uso, tanto la cantidad de tablas o la cantidad de columnas de cada tabla utilizada.
+        
+## Tablas utilizadas.
+  - Production.TransactionHistory
+  - Production.Product
+  - Production.ProductCategory
+  - Production.ProductSubcategory
+
+## Listado de columnas de cada tabla.
+
+```mermaid
+erDiagram
+
+ ProductionTransactionHistory {
+        TransactionsID	int PK
+	ProductID	int FK
+	TransactionDate	datetime
+	TransactionType	nchar1
+	Quanty	int
+	ActualCost	money
+ }
+ ProductionProduct {
+        ProductID	int PK
+	Name	nvarchar50
+	ProductNumber	nvarchar25
+	Color	nvarchar15
+	StandardCost	money
+	ListPrice	money
+	ProductSubcategoryID	int FK
+ }
+ 
+ ProductionProductSubcategory {
+        ProductSubcategoryID	int PK
+	ProductCategoryID	int FK
+	Name	nvarchar50
+ }
+ ProductionProductCategory {
+        ProductCategoryID	int PK
+	Name	nvarchar50
+ }
+        
+```        
+  
+    
+        
 </p>
 </details>
 
