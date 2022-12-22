@@ -223,7 +223,7 @@ erDiagram
 </p>
 </details>
 
-<details open>
+<details>
 <summary><h3>Tercera entrega 08/12.</summary>
 <p>
  
@@ -311,7 +311,19 @@ erDiagram
 </p>
 </details>
 
+<details open>
+<summary><h3>Entrega Final 22/12.</summary>
+<p>
+<picture>
+ <img src="[[alt text](https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/images.png)">
+</picture>	
+	
+<details><summary><h6>Indice 1</summary><p>Algo</p></details>
 
+<details><summary><h6>Indice 2</summary><p>Algo</p></details>
+<details><summary><h6>Indice 3</summary><p>Algo</p></details>
+</p>
+</details>
 
  
  
