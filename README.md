@@ -325,9 +325,9 @@ erDiagram
 
 ## Indice
  1. Presentación del Proyecto 
-    - <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto.</a>
-    - <a href="#alcance-1">Alcance.</a>
-    - <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis.</a>
+    - <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto</a>
+    - <a href="#alcance-1">Alcance</a>
+    - <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis</a>
     - <a href="#descripción-de-la-temática-1">Descripción de la temática</a>
     - <a href="#tipo-de-análisis-1">Tipo de Análisis</a>
  2. Base de Datos  
