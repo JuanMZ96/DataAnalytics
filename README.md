@@ -315,18 +315,31 @@ erDiagram
 <summary><h3>Entrega Final 22/12.</summary>
 <p>
 <div align="center">
-<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/images.png" alt="Alt text"title="Optional title "style=display: inline-block; margin: 0 auto; max width: 300px">
-<h4>Empresa dedicada a la venta minorista y mayorista de bicicletas , con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
+<img src="https://user-images.githubusercontent.com/37779195/209209220-af1f41fc-bd3b-4673-9f78-04d2cd016609.png">
 </div>
+<h4>Empresa dedicada a la venta minorista y mayorista de bicicletas , con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
 
-	
-	
-<details><summary><h6>Indice 1</summary><p>Algo</p></details>
 
-<details><summary><h6>Indice 2</summary><p>Algo</p></details>
-<details><summary><h6>Indice 3</summary><p>Algo</p></details>
+## Indice
+ 1. <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto.</a>
+ 2. <a href="#alcance-1">Alcance.</a>
+ 3. <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis.</a>
+	
+## Objetivo del Proyecto.
+- El objetivo de esta segunda entrega es difinir los diagrama de clases que vamos a utilizar para entender el dominio del problema y los datos que serán
+	utilizados para la presentación en BI.
+	
+## Alcance.
+- El alcance del proyecto es terminar haciendo un dashboard en power Bi haciendo un análisis de las ventas que tenemos en nuestro dataset, según ciertos KPIS
+	difinidos en la primera entrega.
+	
+## Usuario final y nivel de aplicación del análisis.
+- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
+	puede ser un generente de ventas o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
+	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
 </p>
 </details>
+
 
  
  
