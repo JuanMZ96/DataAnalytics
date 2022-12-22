@@ -327,7 +327,12 @@ erDiagram
     - <a href="#usuario-final-y-nivel-de-aplicación-del-análisis-1">Usuario final y nivel de aplicación del análisis.</a>
     - <a href="#descripción-de-la-temática-1">Descripción de la temática</a>
     - <a href="#tipo-de-análisis-1">Tipo de Análisis</a>
-    - <a href="#"></a>
+ 2. Base de Datos  
+    - <a href="#introducción">Introducción</a>
+    - <a href="#tablas-utilizadas-1">Tablas utilizadas</a>
+    - <a href="#listado-de-columnas-de-cada-tabla-1">Listado de columnas de cada tabla</a>
+    - <a href="#diagrama-entidad-relación-1">Diagrama Entidad Relación</a>
+    - <a href="#querys">Querys</a>
 <div align="center" text-decoration= "underline">
 <h1>Presentación del Proyecto
 </div>
@@ -405,9 +410,117 @@ erDiagram
  }
         
 ```        
-  
-    
+
+
+## Diagrama Entidad Relación.
+- A continuación el diagrama
+```mermaid
+flowchart TB
+style A fill: #A5D6A7,color: black
+style 2 fill:#E1BEE7,color: black
+style 1 fill: #E1BEE7,color: black
+style 3 fill: #E1BEE7,color: black
+style 4 fill: #E1BEE7,color: black
+style 5 fill: #E1BEE7,color: black
+style 6 fill: #E1BEE7,color: black
+A(Production.TransactionHistory) --1:N--> B{Detalla}
+style B fill: #FFF59D,color: black
+subgraph  
+	A -->2((ProductID))
+	A -->1((TransactionsID))
+	A -->3((TransactionDate))
+	A -->4((TransactionType))
+	A -->5((Qyanty))
+	A -->6((ActualCost))
+end
+B --> C(Production.Product)
+style C fill: #A5D6A7,color: black
+style 7 fill:#E1BEE7,color: black
+style 9 fill: #E1BEE7,color: black
+style 10 fill: #E1BEE7,color: black
+style 11 fill: #E1BEE7,color: black
+style 12 fill: #E1BEE7,color: black
+style 13 fill: #E1BEE7,color: black
+style 14 fill: #E1BEE7,color: black
+C--1:1-->D{Tiene}
+style D fill: #FFF59D,color: black
+subgraph  
+	C -->7((ProductID))
+	C -->9((Name))
+	C -->10((ProductNumber))
+	C -->11((Color))
+	C -->12((StandardCosts))
+	C -->13((ListPrice))
+	C -->14((ProductSubcategoryID))
+end
+D-->E(Production.ProductSubcategory)
+style E fill:#A5D6A7,color: black
+style 15 fill:#E1BEE7,color: black
+style 16 fill: #E1BEE7,color: black
+style 17 fill: #E1BEE7,color: black
+E--1:1-->F{Tiene}
+style F fill: #FFF59D,color: black
+subgraph  
+	E -->15((ProductSubcategoryID))
+	E -->16((ProductCategoryID))
+	E -->17((Name))
+end
+F-->G(Production.ProductCategory)
+style G fill: #A5D6A7,color: black
+style 18 fill:#E1BEE7,color: black
+style 19 fill: #E1BEE7,color: black
+subgraph  
+	G -->18((ProductCategoryID))
+	G -->19((Name))
+end
+```	
+## Querys
+ - Production.TransactionHistory
+   - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
+   - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de _order_ era.
+   - Se realizó el cálculo de TotalPrice que se obtiene al múltiplica el costo actual por la cantidad del elemento.
+   - En ambos casos de número se dejó solamente dos lugares después de la coma.
+   ```ruby
+	SELECT    
+	tra.TransactionID
+	,CAST(tra.TransactionDate AS date) AS SalesDate
+	,tra.ProductID
+	,case when tra.TransactionType like 'W' then 'WorkOrder'
+		when tra.TransactionType like 'S' then 'SalesOrder'
+		when tra.TransactionType like 'P' then 'PurchaseOrder' end as 'TransactionType'
+	, tra.Quantity
+	,CAST(tra.ActualCost AS decimal(10, 2)) AS Price
+	,CAST(tra.ActualCost AS decimal(10, 2)) * tra.Quantity AS TotalPrice
+
+	FROM  Production.TransactionHistory AS tra 
+   ```
         
+ - Production.Product
+   ```ruby
+      	SELECT [ProductID]
+      	,[Name]
+      	,[ProductNumber]
+      	,[Color]    
+      	,[StandardCost]
+      	,[ListPrice]
+      	,[ProductSubcategoryID]
+	FROM [Curso].[Production].[Product]
+   ```    
+ - Production.ProductSubcategory	
+   ```ruby 
+	SELECT [ProductSubcategoryID]
+      	,[ProductCategoryID]
+      	,[Name]
+  	FROM [Curso].[Production].[ProductSubcategory]	
+   ```   
+ - Production.ProductCategory
+   ```ruby 	
+	SELECT [ProductCategoryID]
+      	,[Name]
+  	FROM [Curso].[Production].[ProductCategory]
+   ```     
+
+       
 </p>
 </details>
 
