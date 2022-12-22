@@ -314,9 +314,12 @@ erDiagram
 <details open>
 <summary><h3>Entrega Final 22/12.</summary>
 <p>
-<picture>
- <img src="[[alt text](https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/images.png)">
-</picture>	
+<div align="center">
+<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/images.png" alt="Alt text"title="Optional title "style=display: inline-block; margin: 0 auto; max width: 300px">
+<h4>Empresa dedicada a la venta minorista y mayorista de bicicletas , con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
+</div>
+
+	
 	
 <details><summary><h6>Indice 1</summary><p>Algo</p></details>
 
