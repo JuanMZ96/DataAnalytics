@@ -316,8 +316,11 @@ erDiagram
 <p>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/37779195/209209220-af1f41fc-bd3b-4673-9f78-04d2cd016609.png">
+<h4>Autor:Juan Martinez</h4>
+<h4>Institución:Coderhouse</h4>
 </div>
 <h4>Empresa dedicada a la venta minorista y mayorista de bicicletas , con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
+
 
 
 ## Indice
@@ -519,7 +522,9 @@ end
       	,[Name]
   	FROM [Curso].[Production].[ProductCategory]
    ```     
-
+<div align="center" text-decoration= "underline">
+<h1>Power Bi
+</div>   	
        
 </p>
 </details>
