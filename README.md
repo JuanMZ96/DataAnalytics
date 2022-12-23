@@ -341,19 +341,17 @@ erDiagram
 </div>
         
 ## Objetivo del Proyecto.
-- El objetivo de esta segunda entrega es difinir los diagrama de clases que vamos a utilizar para entender el dominio del problema y los datos que serán
-	utilizados para la presentación en BI.
+- El objetivo de este proyecto es plasmar en números para comprender el estado actual de la empresa. Tener la cantidad de ventas,compras y ordenes de compras para saber cuanto se generó o perdió en el transcunso del tiempo.
 	
 ## Alcance.
-- El alcance del proyecto es terminar haciendo un dashboard en power Bi haciendo un análisis de las ventas que tenemos en nuestro dataset, según ciertos KPIS
-	difinidos en la primera entrega.
+- El alcance del proyecto es poder entender como está la empresa para poder tomar las deciones pertienen para cambiar el rumbo de la misma. 
 	
 ## Usuario final y nivel de aplicación del análisis.
 - El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
 	puede ser un generente de ventas o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
 	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
 ## Descripción de la temática.
-  - Este trabajo consiste en hacer una análisis de la base de datos suministrada por el curso. 
+  - Este trabajo consiste en hacer una análisis de la base de datos suministrada. 
   En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de ventas de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
   En estas tablas no se toman todas las columnas para su análisis, si no las necesarias para relevar la información pertinente.
     
