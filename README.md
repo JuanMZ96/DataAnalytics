@@ -523,7 +523,19 @@ end
 <div align="center" text-decoration= "underline">
 <h1>Power Bi
 </div>   	
-       
+ 
+## Introucción
+   - El tablero creado muestra un resumen de los dos años de datos(2013 y 2014) seleccionados para el análisis en donde se puede ver en detalle los generado, lo comprado y lo realizado de los distintos tipos de productos, se encuentra segmentado a las 4 ramas principales y luego los subgrupos de los mismos.
+## Objetivo
+   - El objetivo del mismo es poder ver los información presentada para la toma de decisiones y el furuto de cada área involucrada en los distintos procesos.
+## Áreas
+   - La principal área enfocada el tableros es la generencia de cada proceso, tanto ventas y compras como producción.
+## Solapas
+   - Algo
+## Diagrama de entidad y relación
+   - Algo
+## Mejoras
+  - Algo
 </p>
 </details>
 
