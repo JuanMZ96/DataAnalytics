@@ -368,7 +368,7 @@ erDiagram
 </div>        
 
 ## Introducción.
-   - La base utilizada es una presentada por el curso dee CoderHouse para poder prácticar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página ofical de Microsoft(https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms). 
+   - La <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Backup/Curso.zip">base</a> utilizada es una presentada por el curso dee CoderHouse para poder prácticar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página ofical de Microsoft(https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms). 
      - Los datos de base no se usaron en tu totalidad, se usuaron solo la tabla de transacciones para poder ver el flujo de ventas, compras y ordenes de trabajo. Si bien tiene mas datos para analizar, acotamos el dominio para su uso, tanto la cantidad de tablas o la cantidad de columnas de cada tabla utilizada.
         
 ## Tablas utilizadas.
@@ -476,7 +476,7 @@ subgraph
 end
 ```	
 ## Querys
- - Production.TransactionHistory
+ - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/TransactionHistory.sql">Production.TransactionHistory</a>
    - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
    - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de _order_ era.
    - Se realizó el cálculo de TotalPrice que se obtiene al múltiplica el costo actual por la cantidad del elemento.
