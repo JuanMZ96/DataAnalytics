@@ -600,13 +600,17 @@ end
 
 ## Solapas
    - Portada
-     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+     - Se puede ver la presentación del logo de la empesa y cuatro botones para que navegar entre las distintas solapas con información 
 	<div align="center">
      	<img src="https://user-images.githubusercontent.com/37779195/209671494-df20aec1-95fd-47bd-b3d6-9470720238d4.png">
      	</div>
 
    - Resume
-     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+     - En esta solapa tenemos un resumen de números bastante claro de lo que fue la cantidad de proudctos vendidos,comprados y fabricados. 
+     - El profit generado entre las ventas y productos fabricados.
+     - Un histograma de los distintos tipos de transacciónes con las cantidades de las mismas sobre los años de información.
+     - Una participación de las distinas categorías que se pueden filtrar por el tipo de transacción.
+     - Un ranking de las subcategorías que mas cantidad de transacciones tuvieron 
 	<div align="center">
      	<img src="https://user-images.githubusercontent.com/37779195/209671651-54f3ca74-4113-4cd9-9e9d-b90e46f9af39.png">
      	</div>
