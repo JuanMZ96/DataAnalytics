@@ -530,10 +530,18 @@ end
    - El objetivo del mismo es poder ver los información presentada para la toma de decisiones y el furuto de cada área involucrada en los distintos procesos.
 ## Áreas
    - La principal área enfocada el tableros es la generencia de cada proceso, tanto ventas y compras como producción.
-## Solapas
-   - Algo
+## Transformaciones Realizadas
+- Power Query
+   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
+   - Se crearon 3 referencias de la tabla TransactionHistory, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
+   - Se creó una columna nueva que extrae el año de la fecha de venta para realizar un cálculo mas sencillo en las columnas previamente mencionadas.
+- Power bi
+   - Se creó automáticamente el modelo relacional después de crear las conexiones en power query.
 ## Diagrama de entidad y relación
-   - Algo
+   - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209670967-6bd36e7e-4332-4e6f-892d-086ec837d4ed.png">
+     	</div>
 ## Medidas y Fórmulas
 - Tablas
    - Se creó una tabla de Totales para utilizarla para medidas generales de diferentes _orders_.
@@ -589,13 +597,34 @@ end
 	RETURN
 	((ventas14-ventas13)/ventas13)
    ```
-## Transformaciones Realizadas
-- Power Query
-   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
-   - Se crearon 3 referencias de la tabla TransactionHistory, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
-   - Se creó una columna nueva que extrae el año de la fecha de venta para realizar un cálculo mas sencillo.
-- Power bi
-   - Se creó automáticamente el modelo relacional después de crear las conexiones en power query.
+
+## Solapas
+   - Portada
+     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209671494-df20aec1-95fd-47bd-b3d6-9470720238d4.png">
+     	</div>
+
+   - Resume
+     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209671651-54f3ca74-4113-4cd9-9e9d-b90e46f9af39.png">
+     	</div>
+   - SalesOrder
+     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209671694-a433ff7c-85c7-4ef3-8e39-e4fa0d3bd937.png">
+     	</div>
+   - PurchaseOrder
+     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209671741-8c838e0f-d4d8-49de-9c4f-861bf00e0957.png">
+     	</div>
+   - WorkOrder
+     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+	<div align="center">
+     	<img src="https://user-images.githubusercontent.com/37779195/209671788-6f8ab922-0012-49c2-b61c-8060a3b8e5bd.png">
+     	</div>
 ## Mejoras
   - Algo
 </p>
