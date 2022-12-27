@@ -602,7 +602,7 @@ end
    - Portada
      - Se puede ver la presentación del logo de la empesa y cuatro botones para que navegar entre las distintas solapas con información 
 	<div align="center">
-     	<img src="https://user-images.githubusercontent.com/37779195/209671494-df20aec1-95fd-47bd-b3d6-9470720238d4.png">
+     	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Portada.png?raw=true">
      	</div>
 
    - Resume
@@ -612,22 +612,22 @@ end
      - Una participación de las distinas categorías que se pueden filtrar por el tipo de transacción.
      - Un ranking de las subcategorías que mas cantidad de transacciones tuvieron 
 	<div align="center">
-     	<img src="https://user-images.githubusercontent.com/37779195/209671651-54f3ca74-4113-4cd9-9e9d-b90e46f9af39.png">
+     	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Resume.png?raw=true">
      	</div>
    - SalesOrder
      - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
 	<div align="center">
-     	<img src="https://user-images.githubusercontent.com/37779195/209671694-a433ff7c-85c7-4ef3-8e39-e4fa0d3bd937.png">
+     	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Sales%20Orders.png?raw=true">
      	</div>
    - PurchaseOrder
      - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
 	<div align="center">
-     	<img src="https://user-images.githubusercontent.com/37779195/209671741-8c838e0f-d4d8-49de-9c4f-861bf00e0957.png">
+     	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Purchase.png?raw=true">
      	</div>
    - WorkOrder
      - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
 	<div align="center">
-     	<img src="https://user-images.githubusercontent.com/37779195/209671788-6f8ab922-0012-49c2-b61c-8060a3b8e5bd.png">
+     	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Work.png?raw=true">
      	</div>
 ## Mejoras
   - Algo
