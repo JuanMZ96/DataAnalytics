@@ -534,6 +534,68 @@ end
    - Algo
 ## Diagrama de entidad y relación
    - Algo
+## Medidas y Fórmulas
+- Tablas
+   - Se creó una tabla de Totales para utilizarla para medidas generales de diferentes _orders_.
+- Medidas
+   - La medida Profit sirve para saber la ganancias netas de la empresa.
+    ```ruby
+	VAR ventas =
+	CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "SalesOrder" }
+	)
+	VAR  compras = CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "PurchaseOrder" }
+	)
+	VAR  trabajos = CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+	RETURN
+	(trabajos + ventas) - compras
+    ```
+  - La medida Product se calcula la cantidad de productos por _order_ por lo tanto se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función sum(), no suma porque la cantidad de valores es uno.
+   ```ruby
+	ProductWork = 
+	CALCULATE(
+		SUM('Total'[TotalProduct]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+   ```
+  - La medida Price sirve para saber el monto total dependiendo de la _order_, se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función sum(), no suma porque la cantidad de valores es uno.
+   ```ruby
+	PriceWork = 
+	CALCULATE(
+		SUM('Total'[TotalPrice]),
+		'Total'[TransactionType] IN { "WorkOrder" }
+	)
+   ```
+  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del _order_. Para saber de los otros hay que cambiar la tabla, donde dice WorkOrder van las otras que se hizo en power query (Los cálculos de los años son fijos pero se pueden hacer dinámicos utilizando una variable que tome la fecha actual y extrayendo el año).
+   ```ruby
+	PorcentajeWork = 
+	VAR ventas14 =
+	CALCULATE(
+		SUM('WorkOrder'[TotalPrice]),
+		'WorkOrder'[DateYear] IN { 2014 }
+	)
+	VAR  ventas13 = CALCULATE(
+		SUM('WorkOrder'[TotalPrice]),
+		'WorkOrder'[DateYear] IN { 2013 }
+	)
+
+	
+	RETURN
+	((ventas14-ventas13)/ventas13)
+   ```
+## Transformaciones Realizadas
+- Power Query
+   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
+   - Se crearon 3 referencias de la tabla TransactionHistory, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
+   - Se creó una columna nueva que extrae el año de la fecha de venta para realizar un cálculo mas sencillo.
+- Power bi
+   - Se creó automáticamente el modelo relacional después de crear las conexiones en power query.
 ## Mejoras
   - Algo
 </p>
