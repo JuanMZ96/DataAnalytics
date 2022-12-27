@@ -611,6 +611,7 @@ end
      - Un histograma de los distintos tipos de transacciónes con las cantidades de las mismas sobre los años de información.
      - Una participación de las distinas categorías que se pueden filtrar por el tipo de transacción.
      - Un ranking de las subcategorías que mas cantidad de transacciones tuvieron 
+     - Existes 4 botones que permiten navegar por las diferentes solapas, estos se encuentran 3 en la ezquina superior derecha y el logo es el cuarto que te permite regresar a la portada. 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Resume.png?raw=true">
      	</div>
@@ -620,13 +621,13 @@ end
      - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ventas para poder ver cuando fue el mejor mes en cuanto a ventas de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo genero por los dos años.
      - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
-     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses.
+     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses y un botón que te permite borrar los filtros aplicados.
      - Existen 3 botones que sirven para moverse por las página, el logo sirve para volver a _resume_ y los otros dos para moverse por _PurchaseOrder_ y _WorkOrder_ 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Sales%20Orders.png?raw=true">
      	</div>
    - PurchaseOrder
-     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+     - Se 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Purchase.png?raw=true">
      	</div>
