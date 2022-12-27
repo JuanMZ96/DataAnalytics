@@ -615,7 +615,13 @@ end
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Resume.png?raw=true">
      	</div>
    - SalesOrder
-     - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+     - Se encuentra también números generales de acumulados en dos años de ganancias, ventas totales y el rendimiento con respecto al año anterior.
+     - Dos gráficos de barras parecido pero que muentran los generado en cuanto a cantidad de ventas y cantidad de dinero, mostrados en los dos años para tener un comparación rápida.
+     - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ventas para poder ver cuando fue el mejor mes en cuanto a ventas de los distintos tipos productos según su categoría.
+     - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo genero por los dos años.
+     - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
+     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses.
+     - Existen 3 botones que sirven para moverse por las página, el logo sirve para volver a _resume_ y los otros dos para moverse por _PurchaseOrder_ y _WorkOrder_ 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Sales%20Orders.png?raw=true">
      	</div>
