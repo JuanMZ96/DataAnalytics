@@ -350,18 +350,18 @@ erDiagram
 </div>
         
 ## Objetivo del Proyecto.
-- El objetivo de este proyecto es plasmar en números para comprender el estado actual de la empresa. Tener la cantidad de ventas,compras y ordenes de compras para saber cuanto se generó o perdió en el transcunso del tiempo.
+- El objetivo de este proyecto es plasmar en números para comprender el estado actual de la empresa. Tener la cantidad de ventas,compras y ordenes de tabajo para saber cuanto se generó o perdió en el transcurso del tiempo.
 	
 ## Alcance.
-- El alcance del proyecto es poder entender como está la empresa para poder tomar las deciones pertienen para cambiar el rumbo de la misma. 
+- El alcance del proyecto es poder comprende el estado de la empresa para poder tomar las deciones pertienen para cambiar el rumbo de la misma. 
 	
 ## Usuario final y nivel de aplicación del análisis.
-- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se vende. Por lo tanto el usuario final de la presentación
-	puede ser un generente de ventas o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
-	es poder ver como fluctuan la cantidad de ventas por los periodos en cuestión y sobre los productos mas vendidos.
+- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se venden. Por lo tanto el usuario final de la presentación
+	puede ser un generente o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
+	es poder ver como fluctuan las ventas, compras y ordenes de trabajo por los periodos en cuestión.
 ## Descripción de la temática.
   - Este trabajo consiste en hacer una análisis de la base de datos suministrada. 
-  En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de ventas de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
+  En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de transacciones de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
   En estas tablas no se toman todas las columnas para su análisis, si no las necesarias para relevar la información pertinente.
     
 ## Tipo de Análisis.
@@ -626,7 +626,7 @@ end
      	</div>
    - SalesOrder
      - Se encuentra también números generales de acumulados en dos años de ganancias, ventas totales y el rendimiento con respecto al año anterior.
-     - Dos gráficos de barras parecido pero que muentran los generado en cuanto a cantidad de ventas y cantidad de dinero, mostrados en los dos años para tener un comparación rápida.
+     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de ventas y cantidad de dinero, mostrados en los dos años para tener un comparación rápida.
      - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ventas para poder ver cuando fue el mejor mes en cuanto a ventas de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
      - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
@@ -637,7 +637,7 @@ end
      	</div>
    - PurchaseOrder
      - Se encuentra números generales de dos años de inversión, compras totales y el un porcentaje de inversión con respecto al año anterior.
-     - Dos gráficos de barras parecido pero que muentran los generado en cuanto a cantidad de compras y cantidad de dinero invertido, mostrados en los dos años para tener un comparación rápida.
+     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de compras y cantidad de dinero invertido, mostrados en los dos años para tener un comparación rápida.
      - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de compras para poder ver cuando fue el mejor mes en cuanto a eso de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
      - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
@@ -648,7 +648,7 @@ end
      	</div>
    - WorkOrder
      - Se encuentra números generales de lo generado en dos años, ordenes totales totales y el un porcentaje de ordenes hechas con respecto al año anterior.
-     - Dos gráficos de barras parecido pero que muentran los generado en cuanto a cantidad de ordenes y cantidad de dinero generado, mostrados en los dos años para tener un comparación rápida.
+     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de ordenes y cantidad de dinero generado, mostrados en los dos años para tener un comparación rápida.
      - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ordenes para poder ver cuando fue el mejor mes en cuanto a eso de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
      - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
