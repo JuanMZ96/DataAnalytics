@@ -658,7 +658,10 @@ end
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Work.png?raw=true">
      	</div>
 ## Mejoras
-  - Algo
+  - Se podría guardar los datos de ubicación del cliente para hacer un mapa de calor de esas ventas.
+  - Tener datos de los proveedores para hacer un ranking de los mejores
+  - Registar los datos de la persona que realizo la venta para tener un dato mas operativo y asignar un estimulo para los mejores
+  - Teniendo los datos de dos años hacer predicciones para los próximos años.
 </p>
 </details>
 
