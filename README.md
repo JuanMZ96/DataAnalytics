@@ -336,6 +336,15 @@ erDiagram
     - <a href="#listado-de-columnas-de-cada-tabla-1">Listado de columnas de cada tabla</a>
     - <a href="#diagrama-entidad-relación-1">Diagrama Entidad Relación</a>
     - <a href="#querys">Querys</a>
+ 3. Power BI
+    - <a href="#introducción-1">Introducción</a>
+    - <a href="#objetivo">Objetivo</a>
+    - <a href="#áreas">Áreas</a>
+    - <a href="#transformaciones-realizadas-1">Transformaciones Realizadas</a>
+    - <a href="#diagrama-de-entidad-y-relación">Diagrama de entidad y relación</a>
+    - <a href="#medidas-y-fórmulas-1">Medidas y Fórmulas</a>
+    - <a href="#solapas">Solapas</a>
+    - <a href="#mejoras">Mejoras</a>
 <div align="center" text-decoration= "underline">
 <h1>Presentación del Proyecto
 </div>
@@ -524,7 +533,7 @@ end
 <h1>Power Bi
 </div>   	
  
-## Introucción
+## Introducción
    - El tablero creado muestra un resumen de los dos años de datos(2013 y 2014) seleccionados para el análisis en donde se puede ver en detalle los generado, lo comprado y lo realizado de los distintos tipos de productos, se encuentra segmentado a las 4 ramas principales y luego los subgrupos de los mismos.
 ## Objetivo
    - El objetivo del mismo es poder ver los información presentada para la toma de decisiones y el furuto de cada área involucrada en los distintos procesos.
