@@ -9,7 +9,7 @@ _Integrantes_
 | 01 | Martinez|Juan 
 
 <details>
-<summary><h3>Primera entrega 18/10.</summary>
+<summary><h3>Primera entrega 18/10</summary>
 <p>
 
 ## Descripción de la temática.
@@ -70,7 +70,7 @@ _Integrantes_
 </details>
 
 <details>
-<summary><h3>Segunda entrega 03/11.</summary>
+<summary><h3>Segunda entrega 03/11</summary>
 <p>
  
 ## Objetivo del Proyecto.
@@ -224,7 +224,7 @@ erDiagram
 </details>
 
 <details>
-<summary><h3>Tercera entrega 08/12.</summary>
+<summary><h3>Tercera entrega 08/12</summary>
 <p>
  
 ## Objetivo del la entrega
@@ -312,18 +312,18 @@ erDiagram
 </details>
 
 <details open>
-<summary><h3>Entrega Final 22/12.</summary>
+<summary><h3>Entrega Final 22/1.</summary>
 <p>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/37779195/209209220-af1f41fc-bd3b-4673-9f78-04d2cd016609.png">
-<h4>Autor:Juan Martinez</h4>
-<h4>Institución:Coderhouse</h4>
+<h4>Autor: Juan Martinez</h4>
+<h4>Institución: Coderhouse</h4>
 </div>
-<h4>Empresa dedicada a la venta minorista y mayorista de bicicletas , con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
+<h4>Empresa dedicada a la venta minorista y mayorista de bicicletas, con gran experiencia en el rubro de cada uno de sus integrantes.</h4>
 
 
 
-## Indice
+## Índice
  1. Presentación del Proyecto 
     - <a href="#objetivo-del-proyecto-1">Objetivo del Proyecto</a>
     - <a href="#alcance-1">Alcance</a>
@@ -350,22 +350,22 @@ erDiagram
 </div>
         
 ## Objetivo del Proyecto
-- El objetivo de este proyecto es plasmar en números para comprender el estado actual de la empresa. Tener la cantidad de ventas,compras y ordenes de tabajo para saber cuanto se generó o perdió en el transcurso del tiempo.
+- El objetivo de este proyecto es plasmar en gráficos sencillos información sobre el estado actual de la empresa. Tener la cantidad de ventas, compras y órdenes de trabajo para saber cuánto se generó o perdió en el transcurso del tiempo.
 	
 ## Alcance
-- El alcance del proyecto es poder comprende el estado de la empresa para poder tomar las deciones pertienen para cambiar el rumbo de la misma. 
+- El alcance del proyecto es poder comprender el estado de la empresa para poder tomar las decisiones pertinentes para cambiar el rumbo de la misma. 
 	
 ## Usuario final y nivel de aplicación del análisis
-- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se venden. Por lo tanto el usuario final de la presentación
-	puede ser un generente o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
-	es poder ver como fluctuan las ventas, compras y ordenes de trabajo por los periodos en cuestión.
+- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se venden. Por lo tanto, el usuario final de la presentación
+	puede ser un gerente o alguien más operativo como un coordinador, para saber en qué tiene que hacer foco. La aplicación que tiene el mismo
+	es poder ver como fluctúan las ventas, compras y órdenes de trabajo por los períodos en cuestión.
 ## Descripción de la temática
   - Este trabajo consiste en hacer una análisis de la base de datos suministrada. 
-  En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de transacciones de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
-  En estas tablas no se toman todas las columnas para su análisis, si no las necesarias para relevar la información pertinente.
+  En este caso se toma la tabla de _Production.TransactionHistory_ para hacer una análisis del historial de transacciones de acuerdo a los productos de la tabla _Production.Product_ y las tablas _Production.ProductCategory_, _Production.ProductSubcategory_.
+  En estas tablas no se toman todas las columnas para su análisis, sino las necesarias para relevar la información pertinente.
     
 ## Tipo de Análisis
-  - Se va analizar:
+  - Se va a analizar:
     - Cantidad de ventas realizadas por año.
     - Cantidad de ventas realizadas por mes. 
     - Las ganancias de las ventas por año/mes.     
@@ -377,8 +377,8 @@ erDiagram
 </div>        
 
 ## Introducción
-   - La <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Backup/Curso.zip">base</a> utilizada es una presentada por el curso dee CoderHouse para poder prácticar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página ofical de Microsoft(https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms). 
-     - Los datos de base no se usaron en tu totalidad, se usuaron solo la tabla de transacciones para poder ver el flujo de ventas, compras y ordenes de trabajo. Si bien tiene mas datos para analizar, acotamos el dominio para su uso, tanto la cantidad de tablas o la cantidad de columnas de cada tabla utilizada.
+   - La <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Backup/Curso.zip">base</a> utilizada es una presentada por el curso de CoderHouse para poder practicar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página oficial de <a href="https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms">Microsoft</a>. 
+     - Los datos de base no se usaron en su totalidad, se usó solo la tabla de transacciones para poder ver el flujo de ventas, compras y órdenes de trabajo. Si bien tiene más datos para analizar, acotamos el dominio para su uso, tanto la cantidad de tablas como la cantidad de columnas de cada tabla utilizada.
         
 ## Tablas utilizadas
   - Production.TransactionHistory
@@ -486,10 +486,10 @@ end
 ```	
 ## Querys
  - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/TransactionHistory.sql">Production.TransactionHistory</a>
-   - Se realizó un cast() a la columna de TransactionDate para pasarlo a date de datetime. 
-   - Se realizó un _case when_ en la columna TransactionType para poder identificar que tipo de _order_ era.
-   - Se realizó el cálculo de TotalPrice que se obtiene al múltiplica el costo actual por la cantidad del elemento.
-   - En ambos casos de número se dejó solamente dos lugares después de la coma.
+   - Se realizó un _cast()_ a la columna de _TransactionDate_ para pasarlo a _date_ de _datetime_. 
+   - Se realizó un _case when_ en la columna _TransactionType_ para poder identificar que tipo de _order_ era.
+   - Se realizó el cálculo de _TotalPrice_ que se obtiene al multiplicar el costo actual por la cantidad del elemento.
+   - En ambos casos de columnas de tipo numéricas, se utilizaron dos decimales.
    ```ruby
 	SELECT    
 	tra.TransactionID
@@ -507,18 +507,19 @@ end
         
  - Production.Product
    ```ruby
-      	SELECT [ProductID]
-      	,[Name]
-      	,[ProductNumber]
-      	,[Color]    
-      	,[StandardCost]
-      	,[ListPrice]
-      	,[ProductSubcategoryID]
-	FROM [Curso].[Production].[Product]
+      	SELECT ProductID
+      	,Name
+      	,ProductNumber
+      	,Color    
+      	,StandardCost
+      	,ListPrice
+      	,ProductSubcategoryID
+	FROM Curso.Production.Product
    ```    
  - Production.ProductSubcategory	
    ```ruby 
-	SELECT [ProductSubcategoryID]
+	SELECT 
+	[ProductSubcategoryID]
       	,[ProductCategoryID]
       	,[Name]
   	FROM [Curso].[Production].[ProductSubcategory]	
@@ -534,20 +535,20 @@ end
 </div>   	
  
 ## Introducción
-   - El tablero creado muestra un resumen de los dos años de datos(2013 y 2014) seleccionados para el análisis en donde se puede ver en detalle los generado, lo comprado y lo realizado de los distintos tipos de productos, se encuentra segmentado a las 4 ramas principales y luego los subgrupos de los mismos.
+   - El tablero creado muestra un resumen de los dos años de datos (2013 y 2014) seleccionados para el análisis en donde se puede ver en detalle lo generado, lo comprado y lo realizado de los distintos tipos de productos. Los datos se encuentran segmentados en 4 ramas principales y luego en subgrupos.
 ## Objetivo
-   - El objetivo del mismo es poder ver los información presentada para la toma de decisiones y el furuto de cada área involucrada en los distintos procesos.
+   - El objetivo del mismo es poder ver la información presentada para la toma de decisiones y el futuro de cada área involucrada en los distintos procesos.
 ## Áreas
-   - La principal área enfocada el tableros es la generencia de cada proceso, tanto ventas y compras como producción.
+   - La principal área enfocada el tableros es la generencia de cada proceso, tanto compras y ventas como producción.
 ## Transformaciones Realizadas
 - Power Query
-   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla TransactionHistory, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
-   - Se crearon 3 referencias de la tabla TransactionHistory, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
+   - Se crearon las relaciones entre las distintas tablas para que quedara todo en una sola tabla _TransactionHistory_, se hizo combinar querys con el _inner join_ para buscar aquellos productos que tienen una subcategoria y categoria para poder realizar el análisis.
+   - Se crearon 3 referencias de la tabla _TransactionHistory_, cada una con un filtro distinto para poder diferenciar que tipo de _order_ es, para así tener un análisis mas rápido y cálculos sencillos.
    - Se creó una columna nueva que extrae el año de la fecha de venta para realizar un cálculo mas sencillo en las columnas previamente mencionadas.
-- Power bi
+- Power BI
    - Se creó automáticamente el modelo relacional después de crear las conexiones en power query.
 ## Diagrama de entidad y relación
-   - Se puede observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
+   - Se pueden observar todas las tablas creadas por power query y las columnas nuevas como _DateYear_ en las tablas nuevas 
 	<div align="center">
      	<img src="https://user-images.githubusercontent.com/37779195/209670967-6bd36e7e-4332-4e6f-892d-086ec837d4ed.png">
      	</div>
@@ -573,7 +574,7 @@ end
 	RETURN
 	(trabajos + ventas) - compras
     ```
-  - La medida Product se calcula la cantidad de productos por _order_ por lo tanto se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función sum(), no suma porque la cantidad de valores es uno.
+  - La medida Product se calcula la cantidad de productos por _order_ por lo tanto se reemplaza la palabra clave (ejemplo WorkOrders). Por más que se use la función _sum()_, no suma porque la cantidad de valores es uno.
    ```ruby
 	ProductWork = 
 	CALCULATE(
@@ -589,7 +590,7 @@ end
 		'Total'[TransactionType] IN { "WorkOrder" }
 	)
    ```
-  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del _order_. Para saber de los otros hay que cambiar la tabla, donde dice WorkOrder van las otras que se hizo en power query (Los cálculos de los años son fijos pero se pueden hacer dinámicos utilizando una variable que tome la fecha actual y extrayendo el año).
+  - La medida Porcentaje sirve para saber en porciento el rendimiento de la empresa de un año a otro dependiendo del _order_. Para saber el porcentaje de los otros tipos de transacción hay que cambiar la tabla, donde dice _WorkOrder_ van _SalesOrder_ o _PurchaseOrder_ que se hizo en power query (Los cálculos de los años son fijos pero se pueden hacer dinámicos utilizando una variable que tome la fecha actual y extrayendo el año).
    ```ruby
 	PorcentajeWork = 
 	VAR ventas14 =
@@ -609,59 +610,59 @@ end
 
 ## Solapas
    - Portada
-     - Se puede ver la presentación del logo de la empesa y cuatro botones para que navegar entre las distintas solapas con información 
+     - Se puede ver la presentación del logo de la empresa y cuatro botones para poder navegar entre las distintas solapas. 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Portada.png?raw=true">
      	</div>
 
    - Resume
-     - En esta solapa tenemos un resumen de números bastante claro de lo que fue la cantidad de proudctos vendidos,comprados y fabricados. 
-     - El profit generado entre las ventas y productos fabricados.
-     - Un histograma de los distintos tipos de transacciónes con las cantidades de las mismas sobre los años de información.
-     - Una participación de las distinas categorías que se pueden filtrar por el tipo de transacción.
-     - Un ranking de las subcategorías que mas cantidad de transacciones tuvieron 
-     - Existes 4 botones que permiten navegar por las diferentes solapas, estos se encuentran 3 en la ezquina superior derecha y el logo es el cuarto que te permite regresar a la portada. 
+     - En esta solapa tenemos pantallazo general sobre la cantidad de productos vendidos, comprados y fabricados. 
+     - El beneficio obtenido entre las ventas y productos fabricados.
+     - Un histograma que está segmentado con los distintos tipos de transacciones, que marca la cantidad de las mismas por mes.
+     - Un gráfico de torta que muestra la participación de cada categoría.
+     - Un ranking de las subcategorías que mas cantidad de transacciones tuvieron.
+     - Existen 4 botones que permiten navegar por las diferentes solapas, tres se encuentran en la esquina superior derecha y el cuarto es el logo que te permite regresar a la portada. 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Resume.png?raw=true">
      	</div>
    - SalesOrder
-     - Se encuentra también números generales de acumulados en dos años de ganancias, ventas totales y el rendimiento con respecto al año anterior.
-     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de ventas y cantidad de dinero, mostrados en los dos años para tener un comparación rápida.
-     - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ventas para poder ver cuando fue el mejor mes en cuanto a ventas de los distintos tipos productos según su categoría.
+     - Se encuentra información en números claros sobre lo acumulado durante el año comparado con el año anterior sobre ganancias, ventas totales y el rendimiento anual.
+     - Dos gráficos de barras parecidos pero que muestra lo generado en cuanto a cantidad de ventas y cantidad de dinero, mostrados en los dos años para tener un comparación rápida.
+     - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ventas para poder ver cuándo fue el mejor mes en cuanto a ventas de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
-     - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
-     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses y un botón que te permite borrar los filtros aplicados.
-     - Existen 3 botones que sirven para moverse por las página, el logo sirve para volver a _resume_ y los otros dos para moverse por _PurchaseOrder_ y _WorkOrder_ 
+     - También existe un mapa con las subcategorías para tener referencia de cómo está compuesta la participación de cada una.
+     - Hay dos filtros que se pueden aplicar para simplificar los datos que se muestran por todos los gráficos en años y meses, además de un botón que te permite borrar los filtros aplicados.
+     - Existen 3 botones que sirven para moverse por las páginas, el logo sirve para volver a _resume_ y los otros dos para moverse por _PurchaseOrder_ y _WorkOrder_ 
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Sales%20Orders.png?raw=true">
      	</div>
    - PurchaseOrder
-     - Se encuentra números generales de dos años de inversión, compras totales y el un porcentaje de inversión con respecto al año anterior.
-     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de compras y cantidad de dinero invertido, mostrados en los dos años para tener un comparación rápida.
+     -  Se encuentra información en números claros sobre lo acumulado durante el año comparado con el año anterior sobre inversión, compras totales y el un porcentaje de inversión.
+     - Dos gráficos de barras parecidos pero que muestra lo generado en cuanto a cantidad de compras y cantidad de dinero invertido, mostrados en los dos años para tener un comparación rápida.
      - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de compras para poder ver cuando fue el mejor mes en cuanto a eso de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
-     - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
-     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses y un botón que te permite borrar los filtros aplicados.
-     - Existen 3 botones que sirven para moverse por las página, el logo sirve para volver a _resume_ y los otros dos para moverse por _salesOrder_ y _WorkOrder_
+     - También existe un mapa con las subcategorías para tener referencia de cómo está compuesta la participación de cada una.
+     - Hay dos filtros que se pueden aplicar para simplificar los datos que se muestran por todos los gráficos en años y meses, además de un botón que te permite borrar los filtros aplicados.
+     - Existen 3 botones que sirven para moverse por las páginas, el logo sirve para volver a _resume_ y los otros dos para moverse por _SaleOrder_ y _WorkOrder_
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Purchase.png?raw=true">
      	</div>
    - WorkOrder
-     - Se encuentra números generales de lo generado en dos años, ordenes totales totales y el un porcentaje de ordenes hechas con respecto al año anterior.
-     - Dos gráficos de barras parecidos pero que muentran lo generado en cuanto a cantidad de ordenes y cantidad de dinero generado, mostrados en los dos años para tener un comparación rápida.
-     - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de ordenes para poder ver cuando fue el mejor mes en cuanto a eso de los distintos tipos productos según su categoría.
+     -  Se encuentra información en números claros sobre lo acumulado durante el año comparado con el año anterior sobre ganancia de ordenes, cantidad de ordenes y un porcentaje de ordenes hechas.
+     - Dos gráficos de barras parecidos pero que muestra lo generado en cuanto a cantidad de órdenes y cantidad de dinero generado, mostrados en los dos años para tener un comparación rápida.
+     - Otro gráfico de barras que muestra con respecto a los años lo que se generó en cantidad de órdenes para poder ver cuándo fue el mejor mes en cuanto a eso de los distintos tipos productos según su categoría.
      - Una pequeña tabla para tener los números de cada producto en cuestión y ver los totales del mismo generado por los dos años.
-     - También existe un mapa con las subcategorías para tener referencía de como está compuesta la participación de cada una.
-     - Para segmentar tenes dos que sirven para filtrar por todos los gráficos por años y meses y un botón que te permite borrar los filtros aplicados.
-     - Existen 3 botones que sirven para moverse por las página, el logo sirve para volver a _resume_ y los otros dos para moverse por _salesOrder_ y _PurchaseOrder_ 
+     - También existe un mapa con las subcategorías para tener referencia de cómo está compuesta la participación de cada una.
+     - Hay dos filtros que se pueden aplicar para simplificar los datos que se muestran por todos los gráficos en años y meses, además de un botón que te permite borrar los filtros aplicados.
+     - Existen 3 botones que sirven para moverse por las páginas, el logo sirve para volver a _resume_ y los otros dos para moverse por _SaleOrder_ y _PurchaseOrder_
 	<div align="center">
      	<img src="https://github.com/JuanMZ96/DataAnalytics/blob/main/Image/Work.png?raw=true">
      	</div>
 ## Mejoras
-  - Se podría guardar los datos de ubicación del cliente para hacer un mapa de calor de esas ventas.
+  - Se podrían guardar los datos de ubicación del cliente para hacer un mapa de calor de esas ventas.
   - Tener datos de los proveedores para hacer un ranking de los mejores.
-  - Registrar los datos de la persona que realizo la venta para tener un dato mas operativo y asignar un estimulo para los mejores.
-  - Teniendo los datos de dos años hacer predicciones para los próximos años.
+  - Registrar los datos de la persona que realizó la venta para tener un dato más operativo y asignar un estímulo para los mejores.
+  - Teniendo los datos de dos años se podría hacer predicciones para los próximos años.
 </p>
 </details>
 
