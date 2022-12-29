@@ -335,7 +335,7 @@ erDiagram
     - <a href="#tablas-utilizadas-1">Tablas utilizadas</a>
     - <a href="#listado-de-columnas-de-cada-tabla-1">Listado de columnas de cada tabla</a>
     - <a href="#diagrama-entidad-relación-1">Diagrama Entidad Relación</a>
-    - <a href="#querys">Querys</a>
+    - <a href="#queries">Queries</a>
  3. Power BI
     - <a href="#introducción-1">Introducción</a>
     - <a href="#objetivo">Objetivo</a>
@@ -356,7 +356,7 @@ erDiagram
 - El alcance del proyecto es poder comprender el estado de la empresa para poder tomar las decisiones pertinentes para cambiar el rumbo de la misma. 
 	
 ## Usuario final y nivel de aplicación del análisis
-- El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se venden. Por lo tanto, el usuario final de la presentación
+- El proyecto sirve para aquellas personas que toman decisiones sobre las ventas y los productos que se venden. Por lo tanto, el usuario final de la presentación
 	puede ser un gerente o alguien más operativo como un coordinador, para saber en qué tiene que hacer foco. La aplicación que tiene el mismo
 	es poder ver como fluctúan las ventas, compras y órdenes de trabajo por los períodos en cuestión.
 ## Descripción de la temática
@@ -484,7 +484,7 @@ subgraph
 	G -->19((Name))
 end
 ```	
-## Querys
+## Queries
  - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/TransactionHistory.sql">Production.TransactionHistory</a>
    - Se realizó un _cast()_ a la columna de _TransactionDate_ para pasarlo a _date_ de _datetime_. 
    - Se realizó un _case when_ en la columna _TransactionType_ para poder identificar que tipo de _order_ era.
@@ -529,7 +529,7 @@ end
       FROM Curso.Production.ProductCategory
    ```     
 <div align="center" text-decoration= "underline">
-<h1>Power Bi
+<h1>Power BI
 </div>   	
  
 ## Introducción
