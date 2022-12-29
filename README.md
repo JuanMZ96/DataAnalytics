@@ -227,7 +227,7 @@ erDiagram
 <summary><h3>Tercera entrega 08/12.</summary>
 <p>
  
-## Objetivo del la entrega.
+## Objetivo del la entrega
 - En esta entrega se solicita la confección de un dashboard en powerbi, junto a ciertas condiciones para su realización.
 ## Archivos
 - Se cargaron todos los archivos
@@ -349,22 +349,22 @@ erDiagram
 <h1>Presentación del Proyecto
 </div>
         
-## Objetivo del Proyecto.
+## Objetivo del Proyecto
 - El objetivo de este proyecto es plasmar en números para comprender el estado actual de la empresa. Tener la cantidad de ventas,compras y ordenes de tabajo para saber cuanto se generó o perdió en el transcurso del tiempo.
 	
-## Alcance.
+## Alcance
 - El alcance del proyecto es poder comprende el estado de la empresa para poder tomar las deciones pertienen para cambiar el rumbo de la misma. 
 	
-## Usuario final y nivel de aplicación del análisis.
+## Usuario final y nivel de aplicación del análisis
 - El proyecto sirve para aquellas personas que toman dicisiones sobre las ventas y los productos que se venden. Por lo tanto el usuario final de la presentación
 	puede ser un generente o alguien mas operativo como un coordinador para saber que tiene que hacer foco. La aplicación que tiene el mismo
 	es poder ver como fluctuan las ventas, compras y ordenes de trabajo por los periodos en cuestión.
-## Descripción de la temática.
+## Descripción de la temática
   - Este trabajo consiste en hacer una análisis de la base de datos suministrada. 
   En este caso se toma la tabla de Production.TransactionHistory para hacer una análisis del historial de transacciones de acuerdo a los productos de la tabla Production.Product y las tablas Production.ProductCategory, Production.ProductSubcategory.
   En estas tablas no se toman todas las columnas para su análisis, si no las necesarias para relevar la información pertinente.
     
-## Tipo de Análisis.
+## Tipo de Análisis
   - Se va analizar:
     - Cantidad de ventas realizadas por año.
     - Cantidad de ventas realizadas por mes. 
@@ -376,17 +376,17 @@ erDiagram
 <h1>Base de Datos
 </div>        
 
-## Introducción.
+## Introducción
    - La <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Backup/Curso.zip">base</a> utilizada es una presentada por el curso dee CoderHouse para poder prácticar, la misma contiene información acerca del negocio de una venta de bicicletas y artículos referidos a ella. La misma también se puede encontrar en la página ofical de Microsoft(https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms). 
      - Los datos de base no se usaron en tu totalidad, se usuaron solo la tabla de transacciones para poder ver el flujo de ventas, compras y ordenes de trabajo. Si bien tiene mas datos para analizar, acotamos el dominio para su uso, tanto la cantidad de tablas o la cantidad de columnas de cada tabla utilizada.
         
-## Tablas utilizadas.
+## Tablas utilizadas
   - Production.TransactionHistory
   - Production.Product
   - Production.ProductCategory
   - Production.ProductSubcategory
 
-## Listado de columnas de cada tabla.
+## Listado de columnas de cada tabla
 
 ```mermaid
 erDiagram
@@ -422,7 +422,7 @@ erDiagram
 ```        
 
 
-## Diagrama Entidad Relación.
+## Diagrama Entidad Relación
 - A continuación el diagrama
 ```mermaid
 flowchart TB
@@ -659,8 +659,8 @@ end
      	</div>
 ## Mejoras
   - Se podría guardar los datos de ubicación del cliente para hacer un mapa de calor de esas ventas.
-  - Tener datos de los proveedores para hacer un ranking de los mejores
-  - Registar los datos de la persona que realizo la venta para tener un dato mas operativo y asignar un estimulo para los mejores
+  - Tener datos de los proveedores para hacer un ranking de los mejores.
+  - Registrar los datos de la persona que realizo la venta para tener un dato mas operativo y asignar un estimulo para los mejores.
   - Teniendo los datos de dos años hacer predicciones para los próximos años.
 </p>
 </details>
