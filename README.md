@@ -312,7 +312,7 @@ erDiagram
 </details>
 
 <details open>
-<summary><h3>Entrega Final 22/1.</summary>
+<summary><h3>Entrega Final 22/12</summary>
 <p>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/37779195/209209220-af1f41fc-bd3b-4673-9f78-04d2cd016609.png">
@@ -491,44 +491,42 @@ end
    - Se realizó el cálculo de _TotalPrice_ que se obtiene al multiplicar el costo actual por la cantidad del elemento.
    - En ambos casos de columnas de tipo numéricas, se utilizaron dos decimales.
    ```ruby
-	SELECT    
-	tra.TransactionID
-	,CAST(tra.TransactionDate AS date) AS SalesDate
-	,tra.ProductID
-	,case when tra.TransactionType like 'W' then 'WorkOrder'
-		when tra.TransactionType like 'S' then 'SalesOrder'
-		when tra.TransactionType like 'P' then 'PurchaseOrder' end as 'TransactionType'
-	, tra.Quantity
-	,CAST(tra.ActualCost AS decimal(10, 2)) AS Price
-	,CAST(tra.ActualCost AS decimal(10, 2)) * tra.Quantity AS TotalPrice
-
-	FROM  Production.TransactionHistory AS tra 
+      SELECT    
+      tra.TransactionID
+      ,CAST(tra.TransactionDate AS date) AS SalesDate
+      ,tra.ProductID
+      ,case when tra.TransactionType like 'W' then 'WorkOrder'
+            when tra.TransactionType like 'S' then 'SalesOrder'
+            when tra.TransactionType like 'P' then 'PurchaseOrder' end as 'TransactionType'
+      ,tra.Quantity
+      ,CAST(tra.ActualCost AS decimal(10, 2)) AS Price
+      ,CAST(tra.ActualCost AS decimal(10, 2)) * tra.Quantity AS TotalPrice
+      FROM  Production.TransactionHistory AS tra 
    ```
         
- - Production.Product
+ - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/Product.sql">Production.Product</a>
    ```ruby
-      	SELECT ProductID
-      	,Name
-      	,ProductNumber
-      	,Color    
-      	,StandardCost
-      	,ListPrice
-      	,ProductSubcategoryID
-	FROM Curso.Production.Product
+      SELECT ProductID
+      ,Name
+      ,ProductNumber
+      ,Color    
+      ,StandardCost
+      ,ListPrice
+      ,ProductSubcategoryID
+      FROM Curso.Production.Product
    ```    
- - Production.ProductSubcategory	
+ - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/Subcategory.sql">Production.ProductSubcategory</a>	
    ```ruby 
-	SELECT 
-	[ProductSubcategoryID]
-      	,[ProductCategoryID]
-      	,[Name]
-  	FROM [Curso].[Production].[ProductSubcategory]	
+      SELECT ProductSubcategoryID
+      ,ProductCategoryID
+      ,Name
+      FROM Curso.Production.ProductSubcategory	
    ```   
- - Production.ProductCategory
+ - <a href="https://github.com/JuanMZ96/DataAnalytics/blob/main/Query/Category.sql">Production.ProductCategory</a>
    ```ruby 	
-	SELECT [ProductCategoryID]
-      	,[Name]
-  	FROM [Curso].[Production].[ProductCategory]
+      SELECT ProductCategoryID
+      ,Name
+      FROM Curso.Production.ProductCategory
    ```     
 <div align="center" text-decoration= "underline">
 <h1>Power Bi
